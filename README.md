@@ -29,7 +29,3 @@ python analysis/render_discrete_NES.py
 python analysis/figure/render_upper.py
 python analysis/figure/render.py
 ```
-
-## Verification
-
-Figures 4 and 5 were rendered from archived inputs. For Figure 6, the 24 AUC estimates and both limits of their 95% confidence intervals matched the archived figure source using 2,000 participant-level bootstrap resamples. End-to-end retraining from raw data and pixel-level agreement with the final Word figures remain unverified.
