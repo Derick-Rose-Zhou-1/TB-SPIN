@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68", "wheel", "pybind11>=2.12"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scpas-pycompat"
+version = "0.2.0.0"
+description = "Reference-compatible Python execution backend for frozen scPAS v0.2.0"
+readme = "NOTICE_UPSTREAM.md"
+requires-python = ">=3.11"
+license = {text = "GPL-3.0-or-later"}
+dependencies = ["numpy", "scipy", "pandas"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["scpas_pycompat*"]
