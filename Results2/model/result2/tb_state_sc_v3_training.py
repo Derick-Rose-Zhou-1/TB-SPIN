@@ -9,6 +9,7 @@ import json
 import math
 import random
 from dataclasses import asdict, dataclass
+import os
 from pathlib import Path
 
 import h5py
@@ -35,7 +36,7 @@ from tbstate_sc_v3_model import (
 )
 
 
-R2_H5AD = Path("data/train_new.h5ad")
+R2_H5AD = Path(os.environ.get("TBSPIN_R2_TRAIN", "data/train_new.h5ad"))
 TASKS = {
     "T1": {"negative": "HC", "positive": "TBINF"},
     "T2": {"negative": "TBINF", "positive": "ATB"},
